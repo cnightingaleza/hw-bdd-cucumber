@@ -493,3 +493,255 @@ Started GET "/assets/application.self.css?body=1" for ::1 at 2015-07-23 13:57:16
 
 
 Started GET "/assets/application.self.js?body=1" for ::1 at 2015-07-23 13:57:16 -0700
+
+
+Started GET "/assets/rails.png" for 197.88.53.26 at 2015-11-23 18:23:10 +0000
+
+
+Started GET "/assets/rails.png" for 197.88.53.26 at 2015-11-23 18:26:55 +0000
+
+
+Started GET "/movies" for 197.88.53.26 at 2015-11-23 18:26:55 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (40.0ms)
+Completed 200 OK in 210ms (Views: 178.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 197.88.53.26 at 2015-11-23 18:26:56 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 197.88.53.26 at 2015-11-23 18:26:56 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 197.88.53.26 at 2015-11-23 18:26:56 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 197.88.53.26 at 2015-11-23 18:26:56 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 197.88.53.26 at 2015-11-23 18:27:01 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+Redirected to https://saasbook-the-real-radi.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 197.88.53.26 at 2015-11-23 18:27:01 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 197.88.53.26 at 2015-11-23 18:27:02 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 197.88.53.26 at 2015-11-23 18:27:02 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 197.88.53.26 at 2015-11-23 18:27:02 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 197.88.53.26 at 2015-11-23 18:27:02 +0000
+
+
+Started GET "/assets/rails.png" for 197.88.53.26 at 2015-11-23 20:03:49 +0000
+
+
+Started GET "/movies" for 197.88.53.26 at 2015-11-23 20:03:51 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-the-real-radi.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 197.88.53.26 at 2015-11-23 20:03:51 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (48.2ms)
+Completed 200 OK in 114ms (Views: 98.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 197.88.53.26 at 2015-11-23 20:03:52 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 197.88.53.26 at 2015-11-23 20:03:52 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 197.88.53.26 at 2015-11-23 20:03:52 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 197.88.53.26 at 2015-11-23 20:03:52 +0000
+
+
+Started GET "/assets/rails.png" for 197.88.53.26 at 2015-11-23 21:15:19 +0000
+
+
+Started GET "/movies" for 197.88.53.26 at 2015-11-23 21:15:54 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-the-real-radi.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 197.88.53.26 at 2015-11-23 21:15:55 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (42.1ms)
+Completed 200 OK in 117ms (Views: 100.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 197.88.53.26 at 2015-11-23 21:15:55 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:15:55 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:15:55 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:15:56 +0000
+
+
+Started GET "/movies?utf8=%E2%9C%93&title_sort=true&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BNC-17%5D=1&ratings%5BR%5D=1&commit=Refresh" for 197.88.53.26 at 2015-11-23 21:16:40 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "title_sort"=>"true", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "NC-17"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+Redirected to https://saasbook-the-real-radi.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=title" for 197.88.53.26 at 2015-11-23 21:16:40 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 197.88.53.26 at 2015-11-23 21:16:41 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:16:41 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:16:41 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:16:41 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date" for 197.88.53.26 at 2015-11-23 21:16:47 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"release_date"}
+Redirected to https://saasbook-the-real-radi.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date" for 197.88.53.26 at 2015-11-23 21:16:48 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"release_date"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."release_date" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 197.88.53.26 at 2015-11-23 21:16:48 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:16:48 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:16:48 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:16:48 +0000
+
+
+Started GET "/movies" for 197.88.53.26 at 2015-11-23 21:17:08 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-the-real-radi.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date" for 197.88.53.26 at 2015-11-23 21:17:09 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"release_date"}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."release_date" ASC
+  Rendered movies/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 197.88.53.26 at 2015-11-23 21:17:09 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:17:09 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:17:10 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:17:10 +0000
+
+
+Started GET "/assets/application.self.css?body=1" for 197.88.53.26 at 2015-11-23 21:17:13 +0000
+
+
+Started GET "/movies" for 197.88.53.26 at 2015-11-23 21:18:04 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-the-real-radi.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date" for 197.88.53.26 at 2015-11-23 21:18:04 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"release_date"}
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."release_date" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (54.8ms)
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 197.88.53.26 at 2015-11-23 21:18:05 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:18:05 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:18:05 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 197.88.53.26 at 2015-11-23 21:18:05 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Aladdin"], ["rating", "G"], ["release_date", "1992-11-25 00:00:00.000000"], ["created_at", "2015-11-23 21:41:10.335232"], ["updated_at", "2015-11-23 21:41:10.335232"]]
+  [1m[35m (18.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "The Terminator"], ["rating", "R"], ["release_date", "1984-10-26 00:00:00.000000"], ["created_at", "2015-11-23 21:41:10.360830"], ["updated_at", "2015-11-23 21:41:10.360830"]]
+  [1m[36m (16.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "When Harry Met Sally"], ["rating", "R"], ["release_date", "1989-07-21 00:00:00.000000"], ["created_at", "2015-11-23 21:41:10.380329"], ["updated_at", "2015-11-23 21:41:10.380329"]]
+  [1m[35m (16.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "The Help"], ["rating", "PG-13"], ["release_date", "2011-08-10 00:00:00.000000"], ["created_at", "2015-11-23 21:41:10.400344"], ["updated_at", "2015-11-23 21:41:10.400344"]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Chocolat"], ["rating", "PG-13"], ["release_date", "2001-01-05 00:00:00.000000"], ["created_at", "2015-11-23 21:41:10.415304"], ["updated_at", "2015-11-23 21:41:10.415304"]]
+  [1m[35m (12.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Amelie"], ["rating", "R"], ["release_date", "2001-04-25 00:00:00.000000"], ["created_at", "2015-11-23 21:41:10.432004"], ["updated_at", "2015-11-23 21:41:10.432004"]]
+  [1m[36m (15.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "2001: A Space Odyssey"], ["rating", "G"], ["release_date", "1968-04-06 00:00:00.000000"], ["created_at", "2015-11-23 21:41:10.450811"], ["updated_at", "2015-11-23 21:41:10.450811"]]
+  [1m[35m (13.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "The Incredibles"], ["rating", "PG"], ["release_date", "2004-11-05 00:00:00.000000"], ["created_at", "2015-11-23 21:41:10.467749"], ["updated_at", "2015-11-23 21:41:10.467749"]]
+  [1m[36m (12.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Raiders of the Lost Ark"], ["rating", "PG"], ["release_date", "1981-06-12 00:00:00.000000"], ["created_at", "2015-11-23 21:41:10.484237"], ["updated_at", "2015-11-23 21:41:10.484237"]]
+  [1m[35m (15.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Chicken Run"], ["rating", "G"], ["release_date", "2000-06-21 00:00:00.000000"], ["created_at", "2015-11-23 21:41:10.504790"], ["updated_at", "2015-11-23 21:41:10.504790"]]
+  [1m[36m (16.3ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
